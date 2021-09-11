@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>sup</title>
+        <title>#sup</title>
         <meta name="description" content="#sup on the hack club slack" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
