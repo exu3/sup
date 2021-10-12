@@ -11,7 +11,7 @@ export default async (req, res) => {
     token: process.env.SLACK_TOKEN,
     channel: process.env.INTERNALS_CHANNEL_ID,
     text: `
-	yeah (${minute} minutes)
+	y‎e‎ah (${minute} minutes)
 	
 _Sent via <#C02EA7XCGKW>_
 	`,
