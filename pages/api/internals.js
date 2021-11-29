@@ -5,6 +5,7 @@ export default async (req, res) => {
   const client = new WebClient();
 
   const d = new Date();
+  const randInt = Math.floor(Math.random() * 9999);
   const minute = d.getMinutes();
   const zwj = "‎";
 
@@ -17,7 +18,7 @@ export default async (req, res) => {
         "type": "section",
         "text": {
           "type": "mrkdwn",
-          "text": `y${zwj.repeat(minute)}e${zwj.repeat(minute+1)}a${zwj.repeat(minute+7)}h (${minute} minutes) \n\n_Sent via <#C02EA7XCGKW>_`
+          "text": `y${zwj.repeat(minute*randInt)}e${zwj.repeat(minute)}a${zwj.repeat(minute*randInt)}h (${minute} minutes) \n\n_Sent via <#C02EA7XCGKW>_`
         }
       }
     ]
