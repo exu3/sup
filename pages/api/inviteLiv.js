@@ -4,17 +4,17 @@ import { WebClient } from "@slack/web-api";
 export default async (req, res) => {
   const client = new WebClient();
 
-  const id = "U02A67DA1QX" // @liv's id
-  const channelId = "C02EL47E9TN" // tasks channel
+  const id = "U02A67DA1QX"; // @liv's id
+  const channelId = "C02EL47E9TN"; // tasks channel
 
   try {
     const slackRequest = await client.conversations.invite({
-        token: process.env.SLACK_TOKEN,
-        channel: channelId,
-        users: id,
-      });
-  } catch(err) {
-      console.log('error, liv already in channel')
+      token: process.env.SLACK_TOKEN,
+      channel: channelId,
+      users: id,
+    });
+  } catch (err) {
+    console.error("error", err);
   }
-    res.send("added to channel")
+  res.send("added to channel");
 };
