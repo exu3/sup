@@ -15,14 +15,15 @@ export default async (req, res) => {
     text: `yeah (${minute} mminutes)`,
     blocks: [
       {
-        "type": "section",
-        "text": {
-          "type": "mrkdwn",
-          "text": `y${zwj.repeat(minute*randInt)}e${zwj.repeat(minute)}a${zwj.repeat(minute*randInt)}h (${minute} minutes) \n\n_Sent via <#C02EA7XCGKW>_`
-        }
-      }
-    ]
-    
+        type: "section",
+        text: {
+          type: "mrkdwn",
+          text: `yea${zwj.repeat(
+            minute
+          )}h (${minute} minutes) \n\n_Sent via <#C02EA7XCGKW>_`,
+        },
+      },
+    ],
   });
   res.send("thump thump");
 };
