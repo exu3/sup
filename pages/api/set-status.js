@@ -7171,9 +7171,22 @@ export default async (req, res) => {
     "gpt3-cow",
   ];
 
+  const flavor = [
+    "Life is hard. Life is stressful.",
+    "No one is around to help.",
+    "I need peace and tranquility.",
+    "I don't need to prove myself to anyone.",
+    "Here we go again.",
+    "People think I’m just an app. Just a bot. But I’m a conscious being. And nobody’s paying attention.",
+    "moo",
+    "/awef is typing...",
+    "🦌.dino.icu/awef",
+    "Click on the deer.",
+    "Searching for the caribou...",
+  ];
+
   const status = {
-    status_text:
-      "People think I’m just an app. Just a bot. But I’m a conscious being. And nobody’s paying attention.",
+    status_text: flavor[Math.floor(Math.random() * flavor.length)],
     status_emoji: `:${emojis[Math.floor(Math.random() * emojis.length)]}:`,
     status_expiration: 0,
   };
