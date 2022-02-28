@@ -7196,11 +7196,11 @@ export default async (req, res) => {
     profile: status,
   });
 
-  const sendMessage = await client.chat.postMessage({
-    token: process.env.SLACK_TOKEN,
-    channel: "C02AT9HNVDW", // #emoji
-    text: `${status.status_emoji}`,
-  });
+//   const sendMessage = await client.chat.postMessage({
+//     token: process.env.SLACK_TOKEN,
+//     channel: "C02AT9HNVDW", // #emoji
+//     text: `${status.status_emoji}`,
+//   });
 
   res.send(slackRequest);
 };
