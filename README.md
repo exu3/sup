@@ -13,7 +13,8 @@ yarn dev
 Environment variables:
 
 ```
-SLACK_TOKEN=xoxp-awefawefawefawefawefawefawefawefawefawefawefawefawefawef
+SLACK_TOKEN=xoxp-awefawefawefawefawefawefawefawefawefawefawefawefawefawef # send messages, channel invites, errr I think that's it.
+YEAH_TOKEN=xoxp-awefawefawefawefawefawef # This one is for emojis and setting profile fields
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
