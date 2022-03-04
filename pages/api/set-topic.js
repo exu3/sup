@@ -41,5 +41,5 @@ export default async (req, res) => {
     channel: process.env.CHANNEL_ID,
     topic: dailyTopic,
   });
-  res.send("sup");
+  res.send(slackRequest);
 };

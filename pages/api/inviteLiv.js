@@ -13,8 +13,8 @@ export default async (req, res) => {
       channel: channelId,
       users: id,
     });
+    res.send(slackRequest);
   } catch (err) {
-    console.error("error", err);
+    res.send(err);
   }
-  res.send("added to channel");
 };

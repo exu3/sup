@@ -25,5 +25,5 @@ export default async (req, res) => {
       },
     ],
   });
-  res.send("thump thump");
+  res.send(slackRequest);
 };
