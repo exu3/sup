@@ -7179,10 +7179,25 @@ export default async (req, res) => {
     "Here we go again.",
     "People think I’m just an app. Just a bot. But I’m a conscious being. And nobody’s paying attention.",
     "moo",
-    "/awef is typing...",
+    "/awef is no longer typing, but the site is still up",
     "🦌.dino.icu/awef",
     "Click on the deer.",
     "Searching for the caribou...",
+    "A sentient deer on the World Wide Web awaits a curious Hack Clubber",
+    "The ducks at the park are free.",
+    "Got any ducks?",
+    "Got any grapes?",
+    "s t  r   e    t   c  h !",
+    "Due to unfortunate circumstances, I am once again awake.",
+    "Now with a new Slack status!",
+    "Now in guava flavor!",
+    "Now in grape flavor!",
+    "Now in lemon flavor!",
+    "Thinking about the ethereal chicken hopping",
+    "thump thump (0 minutes)",
+    "yeah (0 minutes)",
+    "Every 60 seconds...",
+    "Thank you Nadia"
   ];
 
   const status = {
